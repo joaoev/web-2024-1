@@ -1,5 +1,5 @@
 import { Memoria, PlacaDeVideo, PlacaMae } from "./components/atividade01/02MeuPC";
-import { World } from "./components/atividade01/03Batalha";
+import { Arena, World } from "./components/atividade01/03Batalha";
 import { Pai } from "./components/atividade01/questao01/01Pai";
 
 function App() {
@@ -28,7 +28,11 @@ function App() {
 
         <hr />
         <h2>Questão 03</h2>
-        <World />
+        <World>
+          <Arena name="Arena 01" />
+          <Arena name="Arena 02" />
+          <Arena name="Arena 03" />
+        </World>
       </header>
     </div>
   );

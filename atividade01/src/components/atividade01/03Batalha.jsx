@@ -1,8 +1,6 @@
 import { Children } from 'react';
 
 function Hero({ name, img }) {
-    console.log(img)
-    console.log(typeof img)
     return (
         <>
             <h2>Hero</h2>
@@ -27,16 +25,20 @@ function Arena({ name }) {
         <>
             <Hero name="Batman" img="./batman.png" />
             <Enemy name="Coringa" img="./coringa.png" />
+
+            <Hero name="Batman" img="./batman.png" />
+            <Enemy name="Coringa" img="./coringa.png" />
+
+            <Hero name="Batman" img="./batman.png" />
+            <Enemy name="Coringa" img="./coringa.png" />
         </>
     )
 }
 
-function World() {
+function World({ children }) {
     return (
         <>
-            <Arena name="Arena 01" />
-            <Arena name="Arena 02" />
-            <Arena name="Arena 03" />
+            {children}
         </>
     )
 }
