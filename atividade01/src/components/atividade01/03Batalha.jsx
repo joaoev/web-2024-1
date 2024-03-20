@@ -23,7 +23,7 @@ function Enemy({ name, img }) {
 function Arena({ name }) {
     return (
         <>
-            <h4>Arena: {name}<h4/>
+            <h4>Arena: {name}</h4>
             <Hero name="Batman" img="./batman.png" />
             <Enemy name="Coringa" img="./coringa.png" />
         </>
